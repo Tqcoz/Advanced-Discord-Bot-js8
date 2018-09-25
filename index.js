@@ -16,7 +16,7 @@ const configB       = require('./settingsConfig/ConfigBen.json');
 var settings        = './settingsConfig/settings.json';
 var file            = require(settings)
 
-const TOKEN = file.TOKEN;
+const TOKEN = process.env.TOKEN;
 const GreenStyle = chalk.green;
 
 function generateXp() {
